@@ -1,0 +1,105 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background: #F7F7F7 0% 0% no-repeat padding-box;
+    margin: 0%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.sidehead{
+    font: normal normal bold 28px/25px Roboto;
+    letter-spacing: 0px;
+    color: #42515F;
+}
+.main-screen{
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.sub-screen{
+    
+    margin-left: 150px;
+    margin-right: 150px;
+    height: 600px;
+
+
+}
+.adduser-b{
+    width: 150px;
+    height: 30px;
+    background-color: #82A70C;
+    color: #F7F7F7;
+    border: none;
+}
+.nav2{
+    
+    display: flex;
+    flex-direction: row;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 150px;
+    padding-right: 150px;
+    justify-content:space-between
+    
+
+}
+.subheader{
+
+    color: aliceblue;
+    background-color: darkslategrey;
+    height: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    background: #42515F 0% 0% no-repeat padding-box;
+    border-radius: 3px 3px 0px 0px;
+    opacity: 1;
+}
+.long{
+    flex: 30%;
+}
+.subheader > span:not(.long) {
+    flex: 14%; /* Divide the remaining 70% area equally among the other spans */
+}
+.subheader > span{
+    font: normal normal medium 18px/24px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.flexend{
+    margin-left: 8px;
+}
+.datalayout{
+    background-color: white;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+
+}
+.nametag{
+    flex: 30%;
+}
+.datalayout > span:not(.nametag){
+    flex: 14%;
+}
+.search-symbol{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 3px #00000029;
+    border-radius: 28px;
+    opacity: 1;
+    width: 55px;
+    height: 33px;
+    padding-left: 20px;
+    padding-top: 6px;
+}

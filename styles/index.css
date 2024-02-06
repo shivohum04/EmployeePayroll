@@ -1,0 +1,65 @@
+body{
+    background: #F7F7F7 0% 0% no-repeat padding-box;
+    margin: 0%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+nav{
+    background-color:#ffffff;
+    height: 60px;
+    padding-top: 10px;
+}
+form{
+    background-color:#ffffff;  
+    margin: 25px 300px ;
+    height: 650px;
+    border-radius: 5px;
+    padding-left: 50px;
+    padding-right: 0px;
+    padding-top: 10px;
+    box-shadow: 2px 2px 5px grey ;
+    
+}
+.logo{
+    height: 20px;
+    width: 50px;
+}
+.navtitle{
+    margin-left: 150px ;
+    background-color: white;
+    width: 100px;
+    
+}
+.personal{ 
+    
+    height:max-content;
+    width: max-content;
+
+    
+}
+.name{
+    width: 500px;
+    margin-left: 20px;
+}
+.info{
+    margin-left: 5px;
+}
+.circular-image{
+    height: 30px;
+    width: 30px;
+}
+.head{
+    background-color:white;
+    height: fit-content;
+    width: fit-content;
+    margin-left: 70px;
+    margin-top: 15px;
+}
+.cancelb{
+    margin-top: 70px;
+}
+.subbutton{
+    width: 100px;
+}
+.resbutton{
+    width: 100px;
+}

@@ -1,0 +1,97 @@
+.labels{
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    margin-right: 30px;  
+    gap: 40px;
+    
+    
+ 
+}
+.container-inner{
+    background-color:white;
+    height: 500px;
+    width: 730px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 50px;
+    padding-top: 10px;
+    margin: 30px;
+    
+}
+.container-main{
+    background-color:white;
+    align-items: center;
+    width: 900px;
+    margin-left: 300px;
+    height: 680px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    
+
+}
+.fields{
+    
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    margin-right: 20px;
+    
+    
+}
+
+.notes{
+    height: 80px;
+}
+.circular-image{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.profile-pic{
+    display: flex;
+    flex-direction: row;
+    gap:25px;
+}
+.gender-inputs{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+.depart{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+.lower-buttons{
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    gap: 25px;
+}
+.resbutton{
+    width: 50px;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+}
+.navtitle{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    color: green;
+}
+.namebar{
+    height: 30px;
+}
+.jugaad{
+    color: black;
+}
+.salary{
+    width: 200px;
+}
+.date{
+    width: 200px;
+}

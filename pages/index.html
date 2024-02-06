@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/source.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Page</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navtitle">
+            <a href="../pages/details.html">
+            <img class="logo" src="../assests/logo.png" alt="logo">
+            <span>EMPLOYEE PAYROLL</span>
+            </a>
+            
+            
+        </div>
+    </nav>
+    <div class="container-main">
+        <h2 class="head">Employee Payroll Form</h2>
+        <div class="container-inner">
+            <div class="labels">
+                <label>Name</label>
+                <label>Profile image</label>
+                <label>Gender</label>
+                <label>Department</label>
+                <label>Salary</label>
+                <label>Start Date</label>
+                <label>Notes</label>
+                <button class="cancelb">cancel</button>
+
+            </div>
+            <div class="fields">
+                <input type="text" class="namebar" for="name">
+                <div class="profile-pic">
+                    <div class="pp1">
+                    <input type="radio" for="pp">
+                    <img class="circular-image" src="../assests/black.jpeg" alt="Option 1">
+                    </div>
+                    <div class="pp2">
+                    <input type="radio" for="pp">
+                    <img class="circular-image" src="../assests/black.jpeg" alt="Option 1">
+                    </div>
+                    <div class="pp3">
+                    <input type="radio" for="pp">
+                    <img class="circular-image" src="../assests/black.jpeg" alt="Option 1">
+                    </div>
+                    <div class="pp4">
+                    <input type="radio" for="pp">
+                    <img class="circular-image" src="../assests/black.jpeg" alt="Option 1">
+                    </div>
+                </div>
+                <div class="gender-inputs">
+                    <div class="male">
+                    <input type="radio" for="gender">Male
+                    </div>
+                    <div class="female">
+                    <input type="radio" for ="gender">Female
+                    </div>
+                </div>
+                <div class="depart">
+                    <div class="hr">
+                    <input type="checkbox" for="depart">HR
+                    </div>
+                    <div class="sales">
+                    <input type="checkbox" for="depart">Sales
+                    </div>
+                    <div class="finance">
+                    <input type="checkbox" for="depart">Finance
+                    </div>
+                    <div class="engineer">
+                    <input type="checkbox" for="depart">Engineer
+                    </div>
+                    <div class="depart">
+                    <input type="checkbox" for="depart">Others
+                    </div>
+                </div>
+                <input type="text" class="salary">
+                <input type="date" class="date">
+                <input type="text" for="notes" class="notes">
+
+
+                <div class="lower-buttons">
+                    <button class="subbutton">submit</button>
+                    <button class="resbutton">reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
