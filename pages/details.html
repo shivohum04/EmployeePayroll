@@ -37,7 +37,7 @@
                 <span>START DATE</span>
                 <span>ACTIONS</span>
             </div>
-
+<!--
             <div class="datalayout">
                 <div class="nametag">
                     <img class="circular-image" src="../assests/black.jpeg" alt="Option 1">
@@ -70,8 +70,30 @@
                 <span>6,00,000</span>
                 <span>23.04.2023</span>
                 <span>actions</span>
-            </div>
+            </div> -->
         </div>
     </div>
 </body>
+<script>
+    window.onload = function() {
+        
+        const userData = JSON.parse(localStorage.getItem('userFormData'));
+    
+        const userDetailsSection = document.createElement('div');
+        userDetailsSection.innerHTML = `
+            <div class="datalayout">
+                <div class="nametag">
+                    <img class="circular-image" src="imgsrc/${userData.profilePic}" alt="Profile Picture">
+                    <span>${userData.name}</span>
+                </div>
+                <span>${userData.gender}</span>
+                <span>${userData.departments.join(', ')}</span>
+                <span>${userData.salary}</span>
+                <span>${userData.notes}</span>
+            </div>
+        `;
+        document.querySelector('.sub-screen').appendChild(userDetailsSection);
+    }
+    </script>
+    
 </html>
