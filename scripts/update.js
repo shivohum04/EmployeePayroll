@@ -21,39 +21,50 @@ window.onload = function() {
             let prevgender = data.gender;
             let prevsalary = data.salary;
             let prevnote = data.notes;
+            let departments=data.departments;
             console.log(prevname);
             console.log(prevgender);
             console.log(prevsalary);
             console.log(prevnote);
             console.log(data.departments);
             console.log(data);
+            malecheck="";
+            femalecheck="";
 
-
-            malecheck="false";
-            femalecheck="false";
             if(prevgender=="male"){
-                malecheck="true";
-                console.log("male",malecheck);
-                console.log('demale',femalecheck);
+                malecheck="checked";
             }
 
             else{
-                femalecheck="true";
-                console.Log("female",femalecheck);
-                console.log('male',malecheck);
+                femalecheck="checked";
             }
-            console.log("male",malecheck);
-            console.log('demale',femalecheck);
+         
             //departments 
-            HRcheck ="false";
-            Salescheck = "false";
-            Fincheck = "false";
-            Engcheck= "false";
-            othercheck= "false";
+            HRcheck ="";
+            Salescheck = "";
+            Fincheck = "";
+            Engcheck= "";
+            othercheck= "";
 
-           // for(i=0;i<departments.length();i++){
-             //   if(departments[i]=="")
-            //}
+
+           for(i=0;i<departments.length;i++){
+            if(departments[i]=="HR"){
+                HRcheck="checked";
+            }
+            else if(departments[i]=="Sales"){
+                Salescheck="checked";
+            }
+            else if(departments[i]=="Finance"){
+                Fincheck="checked";
+            }
+            else if(departments[i]=="Engineer"){
+                Engcheck="checked";
+            }
+            else if(departments[i]=="Others"){
+                othercheck="checked";
+            }
+
+           }
            
             const updatedHtml = `
                 <form class="container-inner">
@@ -89,18 +100,18 @@ window.onload = function() {
                         
                         <div class="gender-inputs">
                             <div class="male">
-                                <input type="radio" id="maleRadio" name="gender" value="male" checked=${malecheck}> Male
+                                <input type="radio" id="maleRadio" name="gender" value="male" ${malecheck}> Male
                             </div>
                             <div class="female">
-                                <input type="radio" id="femaleRadio" name="gender" value="female" checked="${femalecheck}"> Female
+                                <input type="radio" id="femaleRadio" name="gender" value="female" ${femalecheck}> Female
                             </div>
                         </div>
                         <div class="depart">
-                            <input type="checkbox" id="HR" name="depart" value="HR"><label for="HR">HR</label>
-                            <input type="checkbox" id="Sales" name="depart" value="Sales" checked="${Salescheck}"><label for="Sales">Sales</label>
-                            <input type="checkbox" id="Finance" name="depart" value="Finance" checked="${Fincheck}"><label for="Finance">Finance</label>
-                            <input type="checkbox" id="Engineer" name="depart" value="Engineer" checked="${Engcheck}"><label for="Engineer">Engineer</label>
-                            <input type="checkbox" id="Others" name="depart" value="Others" checked="${othercheck}"><label for="Others">Others</label>
+                            <input type="checkbox" id="HR" name="depart" value="HR" ${HRcheck}><label for="HR">HR</label>
+                            <input type="checkbox" id="Sales" name="depart" value="Sales"${Salescheck}><label for="Sales">Sales</label>
+                            <input type="checkbox" id="Finance" name="depart" value="Finance"${Fincheck}><label for="Finance">Finance</label>
+                            <input type="checkbox" id="Engineer" name="depart" value="Engineer" ${Engcheck}><label for="Engineer">Engineer</label>
+                            <input type="checkbox" id="Others" name="depart" value="Others"${othercheck}><label for="Others">Others</label>
                         </div>
                         <input type="text" id="salary" class="salary" placeholder="${data.salary}">
                         <input type="date" class="date" placeholder="${data.date}">
