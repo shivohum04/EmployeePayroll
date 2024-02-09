@@ -1,0 +1,173 @@
+{
+  "users": [
+    {
+      "id": "34ad",
+      "name": "Shivohum Sanganeria",
+      "profilePic": {
+        "0": {},
+        "length": 1,
+        "prevObject": {
+          "0": {
+            "location": {
+              "ancestorOrigins": {},
+              "href": "http://127.0.0.1:5500/pages/index.html",
+              "origin": "http://127.0.0.1:5500",
+              "protocol": "http:",
+              "host": "127.0.0.1:5500",
+              "hostname": "127.0.0.1",
+              "port": "5500",
+              "pathname": "/pages/index.html",
+              "search": "",
+              "hash": ""
+            }
+          },
+          "length": 1
+        }
+      },
+      "gender": "male",
+      "departments": [
+        "HR",
+        "Sales",
+        "Others"
+      ],
+      "date": "2024-02-13",
+      "salary": "6,00,000",
+      "notes": "this is shivohums notes"
+    },
+    {
+      "id": "1b4c",
+      "name": "manvendra hada",
+      "profilePic": {
+        "0": {},
+        "length": 1,
+        "prevObject": {
+          "0": {
+            "location": {
+              "ancestorOrigins": {},
+              "href": "http://127.0.0.1:5500/pages/index.html",
+              "origin": "http://127.0.0.1:5500",
+              "protocol": "http:",
+              "host": "127.0.0.1:5500",
+              "hostname": "127.0.0.1",
+              "port": "5500",
+              "pathname": "/pages/index.html",
+              "search": "",
+              "hash": ""
+            }
+          },
+          "length": 1
+        }
+      },
+      "gender": "male",
+      "departments": [
+        "Sales",
+        "Finance"
+      ],
+      "date": "2024-02-27",
+      "salary": "6,00,000",
+      "notes": "this is hada notes"
+    },
+    {
+      "id": "f443",
+      "name": "kaustabh bhatt",
+      "profilePic": {
+        "0": {},
+        "length": 1,
+        "prevObject": {
+          "0": {
+            "location": {
+              "ancestorOrigins": {},
+              "href": "http://127.0.0.1:5500/pages/index.html",
+              "origin": "http://127.0.0.1:5500",
+              "protocol": "http:",
+              "host": "127.0.0.1:5500",
+              "hostname": "127.0.0.1",
+              "port": "5500",
+              "pathname": "/pages/index.html",
+              "search": "",
+              "hash": ""
+            }
+          },
+          "length": 1
+        }
+      },
+      "gender": "male",
+      "departments": [
+        "Sales",
+        "Others"
+      ],
+      "date": "2024-02-27",
+      "salary": "8,00,000",
+      "notes": "this is kb notes"
+    },
+    {
+      "id": "b02f",
+      "name": "riya jain",
+      "profilePic": {
+        "0": {},
+        "length": 1,
+        "prevObject": {
+          "0": {
+            "location": {
+              "ancestorOrigins": {},
+              "href": "http://127.0.0.1:5500/pages/index.html",
+              "origin": "http://127.0.0.1:5500",
+              "protocol": "http:",
+              "host": "127.0.0.1:5500",
+              "hostname": "127.0.0.1",
+              "port": "5500",
+              "pathname": "/pages/index.html",
+              "search": "",
+              "hash": ""
+            }
+          },
+          "length": 1
+        }
+      },
+      "gender": "female",
+      "departments": [
+        "Sales",
+        "Finance",
+        "Others"
+      ],
+      "date": "2024-02-27",
+      "salary": "8,00,000",
+      "notes": "this is riya notes"
+    },
+    {
+      "id": "75fb",
+      "name": "",
+      "profilePic": {
+        "length": 0,
+        "prevObject": {
+          "0": {
+            "location": {
+              "ancestorOrigins": {},
+              "href": "http://127.0.0.1:5500/pages/index.html",
+              "origin": "http://127.0.0.1:5500",
+              "protocol": "http:",
+              "host": "127.0.0.1:5500",
+              "hostname": "127.0.0.1",
+              "port": "5500",
+              "pathname": "/pages/index.html",
+              "search": "",
+              "hash": ""
+            }
+          },
+          "length": 1
+        }
+      },
+      "gender": "female",
+      "departments": [
+        "HR",
+        "Sales",
+        "Finance",
+        "Engineer",
+        "Others"
+      ],
+      "date": "",
+      "salary": "",
+      "notes": ""
+    }
+  ]
+}

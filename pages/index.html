@@ -12,7 +12,9 @@
 <nav class="navbar">
     <div class="navtitle">
         <i class='fas fa-portrait'></i>
+        <a href="details.html">
         <span>EMPLOYEE PAYROLL</span>
+        </a>
     </div>
 </nav>
 
@@ -68,45 +70,14 @@
             <input type="date" class="date">
             <input type="text" id="notes" class="notes">
             <div class="lower-buttons">
-                <button type="button" class="subbutton" onclick="display()">Submit</button>
+                <button type="button" id="subbutton" class="subbutton">Submit</button>
                 <button type="reset" class="resbutton">Reset</button>
             </div>
         </div>
     </form>
 </div>
 
-<script>
-
-    function display() {
-        let user_name = document.getElementsByClassName("namebar")[0].value;
-        let profilePics = document.getElementsByName("profilePic");
-        let selectedProfilePic = [...profilePics].find(pic => pic.checked)?.value;
-        let salary = document.getElementsByClassName("salary")[0].value;
-        let note = document.getElementsByClassName("notes")[0].value;
-        let date = document.getElementsByClassName("date").value;
-
-        let gender = document.getElementById("maleRadio").checked ? "male" : "female";
-
-        let departments = [...document.querySelectorAll('input[name="depart"]:checked')].map(dept => dept.value);
-
-        let userObject = {
-            name: user_name,
-            profilePic: selectedProfilePic,
-            gender: gender,
-            departments: departments,
-            date: date,
-            salary: salary,
-            notes: note
-        };
-
-        console.log(userObject);
-
-        localStorage.setItem('userFormData', JSON.stringify(userObject));
-
-        window.location.href = 'details.html';
-    }
-
-   
-</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../scripts/index.js"></script>
 </body>
 </html>
