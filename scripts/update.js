@@ -17,17 +17,8 @@ window.onload = function() {
         success: function(data) {
             console.log("got info");
             console.log(data);
-            let prevname = data.name;
             let prevgender = data.gender;
-            let prevsalary = data.salary;
-            let prevnote = data.notes;
             let departments=data.departments;
-            console.log(prevname);
-            console.log(prevgender);
-            console.log(prevsalary);
-            console.log(prevnote);
-            console.log(data.departments);
-            console.log(data);
             malecheck="";
             femalecheck="";
 
@@ -78,7 +69,7 @@ window.onload = function() {
                         <label>Notes</label>
                     </div>
                     <div class="fields">
-                        <input type="text" id="name" class="namebar" placeholder="${data.name}">
+                        <input type="text" id="name" class="namebar" value="${data.name}">
                         <div class="profile-pic">
                             <label>
                                 <input type="radio" name="profilePic" value="black.jpeg">
@@ -113,11 +104,11 @@ window.onload = function() {
                             <input type="checkbox" id="Engineer" name="depart" value="Engineer" ${Engcheck}><label for="Engineer">Engineer</label>
                             <input type="checkbox" id="Others" name="depart" value="Others"${othercheck}><label for="Others">Others</label>
                         </div>
-                        <input type="text" id="salary" class="salary" placeholder="${data.salary}">
-                        <input type="date" class="date" placeholder="${data.date}">
-                        <input type="text" id="notes" class="notes" placeholder="${data.notes}">
+                        <input type="text" id="salary" class="salary" value="${data.salary}">
+                        <input type="date" class="date" value=${data.date}>
+                        <input type="text" id="notes" class="notes" value="${data.notes}">
                         <div class="lower-buttons">
-                            <button type="button" id="subbutton" class="subbutton">update</button>
+                            <button type="button" id="upbutton" class="subbutton">update</button>
                             <button type="reset" class="resbutton">Reset</button>
                         </div>
                     </div>
@@ -132,7 +123,74 @@ window.onload = function() {
             console.error("Error fetching user data:", error);
         }
     });
+    
+$(document).on('click', '#upbutton', function() {
+    // collecting data
+    console.log("clicked");
 
+    let user_name = $(".namebar").val();
+    let selectedProfilePic = $("input[name='profilePic']:checked").val();
+  
+    let salary = jQuery(".salary").val();
+    let note = $(".notes").val();
+    let date = $(".date").val();
+
+    let gender = $("#maleRadio").is(":checked") ? "male" : "female";
+
+    let departments = $('input[name="depart"]:checked').map(function() {
+        return this.value;
+    }).get();
+
+    let userObject = {
+        name: user_name,
+        profilePic: selectedProfilePic,
+        gender: gender,
+        departments: departments,
+        date: date,
+        salary: salary,
+        notes: note
+    };
+
+    console.log(userObject);
+    // uploading the updated form in json
+    $.ajax({
+        url: 'http://localhost:3000/users/'+ queryID,
+        type: 'PUT',
+        contentType: 'application/json',
+        data: JSON.stringify(userObject),
+        success: function(userObject) {
+
+            console.log("successfully added");
+            console.log(userObject);
+            console.log(selectedProfilePic);
+            
+
+        },
+        error: function(xhr, status, error) {
+
+            console.error(error);
+        }
+    });
+    alert("the prev ifnormation will be deleted")
+    // deleting the previous data 
+    // $.ajax({
+    //     type: "DELETE", 
+    //     url: "http://localhost:3000/users/" + queryID,
+    //     success: function() {
+        
+    //             $(this).remove();
+            
+    //     },
+    //     error: function(xhr, status, error) {
+    //         console.error("Error: ", error);
+            
+    //     }
+    // });
+    // removing queryID from local storage 
+    localStorage.removeItem('itemName');
+    window.location.href="details.html";
+
+});
 
 
 };

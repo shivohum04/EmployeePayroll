@@ -62,3 +62,7 @@ form{
 .resbutton{
     width: 100px;
 }
+.cancel{
+    width: fit-content;
+    margin-top: 45px;
+}
